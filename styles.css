@@ -38,7 +38,7 @@ padding: 2rem 0;
 .hero {
   height: 100vh;
   text-align: center;
-  background-image: url('../images/hero.jpg'); /* Replace with your image path */
+  background-image: url('./images/hero.jpg'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
