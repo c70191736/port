@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Olorunfemi | Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+  <!-- Hero/About Section -->
+  <section id="about" class="hero">
+    <div class="container">
+      <h2>Hi, I'm Isaac — a Full Stack Developer</h2>
+      <p>I specialize in Python development and enjoy creating robust, scalable web applications. This is my personal portfolio showcasing my work and skills.</p>
+      <a href="#projects" class="see-more-btn">See More</a> <!-- Added See More button -->
+    </div>
+  </section>
+  
+
+<!-- Gallery Section -->
+<section id="projects">
+    <div class="container">
+      <h3>My Projects</h3>
+      <div class="gallery">
+        <!-- Project cards -->
+        <div class="project-card">
+          <img src="/images/project1.png" alt="Project 1" class="project-image" />
+          <h3><a href="https://github.com/1s44c-0/Automated-Social-Media-Posting" target="_blank">Automated Social Media Posting</a></h3>
+          <p>Schedule and post updates to multiple social media platforms (e.g., Twitter, Facebook, LinkedIn) automatically using their respective APIs.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="/images/project2.png" alt="Project 2" class="project-image" />
+          <h3><a href="https://github.com/1s44c-0/Automate-Report-Generation-from-Databases" target="_blank">Automate Report Generation from Databases</a></h3>
+          <p>Fetch data from a SQL database, perform analysis, and generate a report (e.g., in Excel or PDF format).</p>
+        </div>
+
+        <div class="project-card">
+          <img src="/images/project3.jfif" alt="Project 3" class="project-image" />
+          <h3><a href="https://github.com/1s44c-0/Automate-Web-Scraping-for-Data-Collection" target="_blank">Automate Web Scraping for Data Collection</a></h3>
+          <p>Automatically scrape data from a website and save it into a CSV file. For example, collecting product prices from an e-commerce site.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="/images/project4.jpg" alt="Project 3" class="project-image" />
+            <h3><a href="https://github.com/1s44c-0/Automated-Report-Generation-and-Email-Distribution" target="_blank">Automated Report Generation and Email Distribution</a></h3>
+            <p>Generate comprehensive business reports by aggregating data from multiple sources (databases and APIs), format them into Excel and PDF, and automatically email the reports to a distribution list.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="/images/project5.png" alt="Project 3" class="project-image" />
+          <h3><a href="https://github.com/1s44c-0/Automate-PDF-Merging-and-Splitting" target="_blank">Automate PDF Merging and Splitting</a></h3>
+          <p>Merge multiple PDF files into one or split a single PDF into multiple files using Python</p>
+        </div>
+
+        <div class="project-card">
+          <img src="/images/project6.jpg" alt="Project 3" class="project-image" />
+          <h3><a href="https://github.com/1s44c-0/Automate-Database-Backups" target="_blank">Automate Database Backups</a></h3>
+          <p>Create automated backups of your SQL databases to ensure data safety and recovery in case of failures.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="/images/project7.jpg" alt="Project 3" class="project-image" />
+          <h3><a href="https://github.com/1s44c-0/Automate-Sending-Reminders-via-SMS" target="_blank">Automate Sending Reminders via SMS</a></h3>
+          <p>Send automated SMS reminders using the Twilio API. Useful for appointment reminders, payment alerts, or event notifications.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="/images/project8.png" alt="Project 3" class="project-image" />
+          <h3><a href="" target="_blank">Automate Web Form Submission</a></h3>
+          <p>Automatically fill and submit web forms using Selenium. Useful for automating repetitive data entry tasks on web applications.</p>
+        </div>
+
+      </div>
+
+      <div class="pagination-controls"></div>
+
+    </div>
+  </section>
+  
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h3>My Skills</h3>
+
+    <div class="skill-bar">
+      <div class="skill-label">
+        <label>Python</label>
+        <span class="percent" data-percent="90">0%</span>
+      </div>
+      <div class="bar"><div class="fill" data-width="90%"></div></div>
+    </div>
+    
+
+    <div class="skill-bar">
+      <div class="skill-label">
+        <label>JavaScript</label>
+        <span class="percent" data-percent="75">0%</span>
+      </div>
+      <div class="bar"><div class="fill" data-width="75%"></div></div>
+    </div>
+
+    <div class="skill-bar">
+      <div class="skill-label">
+        <label>HTML/CSS</label>
+        <span class="percent" data-percent="85">0%</span>
+      </div>
+      <div class="bar"><div class="fill" data-width="85%"></div></div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="https://formspree.io/f/xovdljba" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>      
+      <p id="form-status" style="display: none; color: green;">Message sent successfully!</p>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Back to top">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Isaac Olorunfemi</p>
+      <div class="social-links">
+        <a href="https://github.com/1s44c-0" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/isaac-olorunfemi-741a29238/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+  
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+  
+      if (response.ok) {
+        status.style.display = "block";
+        form.reset();
+      } else {
+        status.textContent = "Oops! There was a problem submitting your form.";
+        status.style.color = "red";
+        status.style.display = "block";
+      }
+    });
+  </script>
+  
+</body>
+</html>

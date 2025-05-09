@@ -1,0 +1,319 @@
+/* Base Styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+color: var(--text-color);
+background-color: var(--background-color);
+line-height: 1.6;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+    
+
+.container {
+width: 90%;
+max-width: 1100px;
+margin: 0 auto;
+padding: 2rem 0;
+}
+
+/* Color Variables */
+:root {
+--primary-color: #fffbfb; /* Blue */
+--secondary-color: #000000; /* White */
+--text-color: #000000; /* Dark text */
+--background-color: #ffffff; /* Light background color */
+--border-color: rgb(212, 212, 212);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  text-align: center;
+  background-image: url('../images/hero.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  position: relative;
+  color: var(--primary-color); /* Makes sure text is visible on image */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero h2 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+}
+
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+}
+
+.see-more-btn {
+border: 1px solid var(--border-color);
+padding: 0.75rem 2rem;
+background-color: var(--background-color);
+color: var(--text-color);
+font-size: 1rem;
+text-decoration: none;
+font-weight: bold;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+background-color: #000000; /* Slight hover effect */
+color: #ffffff;
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 cards per row on desktop */
+    gap: 1rem;
+  }
+  
+  .project-card {
+    border: 1px solid var(--border-color);
+    background: var(--background-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Add smooth transition */
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px; /* optional: adds a nice rounded effect */
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card h3 a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .project-card h3 a:hover {
+    color: var(--text-color); /* Change on hover */
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Scale effect on hover */
+  .project-card:hover {
+    transform: scale(0.9); /* Scales the card down */
+  }
+  .pagination-controls {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .pagination-controls button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .pagination-controls button:hover {
+    background-color: #ccc;
+  }
+  
+  .pagination-controls button.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+
+/* Skills */
+#skills {
+  background: var(--secondary-color);
+  padding: 4rem 1rem;
+  color: var(--primary-color);
+}
+
+#skills h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.skill-bar {
+  margin-bottom: 1rem;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.bar {
+  background: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fill {
+  background: rgb(118, 118, 211);
+  border-radius: 10px;
+  height: 100%;
+  width: 0;
+  transition: width 2s ease;
+}
+
+/* Contact */
+#contact-form {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+padding: 0.75rem;
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+}
+
+#contact-form button {
+padding: 0.75rem;
+background: var(--secondary-color);
+color: var(--primary-color);
+border: none;
+cursor: pointer;
+font-weight: bold;
+transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+background: #e0d2d2;
+color: #000000;
+}
+
+/* Back to Top */
+#back-to-top {
+position: fixed;
+bottom: 30px;
+right: 30px;
+padding: 0.75rem;
+background: var(--secondary-color);
+color: var(--primary-color);
+border: none;
+border-radius: 50%;
+font-size: 1.2rem;
+cursor: pointer;
+display: none; /* Enabled with JS */
+}
+
+/* Footer */
+footer {
+text-align: center;
+background: var(--secondary-color);
+color: var(--primary-color);
+padding: 1rem 0;
+}
+
+footer .social-links {
+margin-top: 0.5rem;
+}
+
+footer .social-links a {
+margin: 0 0.5rem;
+color: var(--primary-color);
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {  
+.hero h2 {
+    font-size: 2rem;
+}
+
+.bar {
+    height: 18px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    font-size: 0.95rem;
+}
+.gallery {
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+}
+}
+
+@media (max-width: 480px) {
+.hero h2 {
+    font-size: 1.75rem;
+}
+
+nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-card {
+    padding: 0.75rem;
+}
+
+#back-to-top {
+    bottom: 20px;
+    right: 20px;
+}
+.gallery {
+  grid-template-columns: 1fr; /* 1 card per row on mobile */
+}
+}
+
